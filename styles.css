@@ -113,6 +113,13 @@ body{
 
 /* HEADER/MAIN/FOOTER SHARED STYLES */
 /* TO DO: Add shared styles for the header main and footer here. Include padding, width, max-width, margin for centering, and the white background color */
+header, main, footer{
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 900px - 2rem;
+    margin: 0 auto;
+    background-color: var(--wht);
+}
 
 
 /* HEADER STYLES */
