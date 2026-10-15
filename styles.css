@@ -186,6 +186,15 @@ nav{
 
 /* TO DO: Style the links in the navigation here to look more like buttons. Don't forget focus and hover styles! */
 
+nav a{
+    width: calc(100% -32px);
+    margin: 16px auto;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 4px solid var(--dk-blue-gray);
+}
+
 /* TEXT STYLES */
 /* TO DO: Add styles here for all of the paragraphs on the page that will limit their width and make them centered on the page (not the text alignment, the actual container). Also give these some top and bottom padding */
 
