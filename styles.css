@@ -116,7 +116,7 @@ body{
 header, main, footer{
     padding: 1rem;
     width: calc(100% - 2rem);
-    max-width: 900px - 2rem;
+    max-width: calc(900px - 2rem);
     margin: 0 auto;
     background-color: var(--wht);
 }
@@ -148,7 +148,7 @@ h2 {
 /* TO DO: Add styles here for all of the links on the page. Include text color, and don't forget the important styles like hover and focus! */
 
 a{
-    display: block
+    display: block;
     padding: 16px;
     color: var(--dk-gray);
     text-decoration: underline;
@@ -175,6 +175,7 @@ img, svg{
     display: block;
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 
@@ -188,7 +189,7 @@ nav{
 
 nav a{
     display: block;
-    width: calc(100% -32px);
+    width: calc(100% - 32px);
     margin: 16px auto;
     font-size: 1.3rem;
     font-weight: 700;
@@ -197,51 +198,86 @@ nav a{
     padding: 16px;
 }
 
+
+nav a:hover{
+    border-style: inset;
+    background-color: var(--lt-gray);
+}
 /* TEXT STYLES */
 /* TO DO: Add styles here for all of the paragraphs on the page that will limit their width and make them centered on the page (not the text alignment, the actual container). Also give these some top and bottom padding */
 
+p{
+    width: 100%;
+    max-width: 600px;
+    padding: 8px 0;
+    margin: 0 auto;
+}
+
 /* WELCOME SECTION STYLES */
 #welcome h2{
-    /* white-space: nowrap; */
+    white-space: nowrap;
 }
 
 #welcome img{
-    /* max-width: 1440px;
-    margin: 16px auto; */
+    max-width: 1440px;
+    margin: 16px auto; 
 }
 
 /* ABOUT/CONTACT SHARED STYLES */
 /* TO DO: Add styles shared by the about and contact sections (padding and margin to center) */
 
+#about, #contact{
+    padding: 16px;
+    margin: 16px auto;
+}
+
+
 #about > a:hover, #contact > a:hover{
-    /* background-color: var(--wht); */
+    background-color: var(--wht); 
 }
 
 #about img, #contact img{
-    /* max-width: 200px; */
+     max-width: 200px; 
 }
 
 /* ABOUT SECTION STYLES */
 /* TO DO: set the yellow green color as background on this section */
 
+#about{
+
+background-color: var(--yellow-grn);
+}
 
 /* CONTACT SECTION STYLES */
 /* TO DO: set the light blue gray color as the background on this section */
 
-
+#contact{
+    background-color: var(--lt-blue-gray);
+}
 #contact p > a{
-    /* display: inline;
-    padding: 0; */
+    display: inline;
+    padding: 0; 
 }
 
 /* TO DO: Add hover styles to the link in the paragraph in the contact section. Remove the underline and make the background color white */
 
+#contact p > a:hover{
+    text-decoration: none;
+    background-color: var(--wht);
+}
+
 /* FOOTER STYLES */
 /* TO DO: Add footer styles here. Include padding, text aligned to the center, and a solid 8 pixel border in dark blue */
 
+footer{
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+    border-top: 8px solid var(--dk-blue);
+}
+
 footer a:hover{
-    /* text-decoration: none;
-    background-color: var(--yellow-grn); */
+    text-decoration: none;
+    background-color: var(--yellow-grn);
 }
 
 .desktop{
