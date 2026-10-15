@@ -129,6 +129,21 @@ header{
 /* HEADING STYLES */
 /* TO DO: Add styles here for the h1 and h2 headings on the page (include font weight and text alignment, plus font sizes and margin for each */
 
+h1, h2{
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 16px 0;
+}
+
 /* LINK STYLES */
 /* TO DO: Add styles here for all of the links on the page. Include text color, and don't forget the important styles like hover and focus! */
 
