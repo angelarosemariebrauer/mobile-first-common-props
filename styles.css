@@ -147,8 +147,37 @@ h2 {
 /* LINK STYLES */
 /* TO DO: Add styles here for all of the links on the page. Include text color, and don't forget the important styles like hover and focus! */
 
+a{
+    display: block
+    padding: 16px;
+    color: var(--dk-gray);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+a:hover{
+    text-decoration-color: var(--dk-brwn);
+}
+
+a:focus{
+    outline: 4px solid var(--orange);
+    outline-offset: 2px;
+}
+
+/*Adds more space^^ using outline offset*/
+
+
 /* IMAGE STYLES */
 /* TO DO: Add styles here for all of the images and SVGs on the page */
+
+img, svg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* NAVIGATION STYLES */
 nav{
