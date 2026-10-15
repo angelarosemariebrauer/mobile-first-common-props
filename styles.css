@@ -187,12 +187,14 @@ nav{
 /* TO DO: Style the links in the navigation here to look more like buttons. Don't forget focus and hover styles! */
 
 nav a{
+    display: block;
     width: calc(100% -32px);
     margin: 16px auto;
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
     border: 4px solid var(--blue-gray);
+    padding: 16px;
 }
 
 /* TEXT STYLES */
